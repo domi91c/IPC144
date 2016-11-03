@@ -1,0 +1,50 @@
+
+* puzzle:
+
+  - a multi-dimensional array. each index contains starting numbers, and remaining
+  - indices must be filled by algorithm.
+    each index must also contain information on surrounding cage walls.
+
+* values:
+  given numbers = int
+  bottom border   = bool
+  right border    = bool
+
+  puzzle = multidimensional array = [2][2]
+
+  [0][0]  [0][1]  [0][2]
+  [1][0]  [1][1]  [1][2]
+  [2][0]  [2][1]  [2][2]
+
+* process:
+** iterate over each indice in puzzle.
+   -
+
+
+
+
+   - if bottom row, do not check bottom border.
+   - if last column, do not check right order.
+** inputting new puzzle:
+   must have a way of inputting puzzles so the array can solve them.
+
+*** get input from user:
+    for each index of puzzle array, program waits for user to enter initial value,
+    if any. If there is a border to the right of the index, and if there is a
+    border under the index.
+    - maybe allow entry in a specific format. like, `0 b r`, meaning no initial
+      value, a right border and a bottom border.
+    - example puzzle:
+      - {[0][0]}: 0 0 r, 4 b r, 0 b
+      - {[1][0]}: 8 b r, 4 b r, 0 b
+      - {[2][0]}: 0   0, 0   r, 0
+
+*** can i create a c program that creates a grid?
+
++---+---+---+
+|
++---+---+---+
+
+** submission
+
+*** step 1
